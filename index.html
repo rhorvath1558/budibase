@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8">
-    <title>Auto Refresh</title>
-    <script>
-      setTimeout(function () {
-        window.location.reload();
-      }, 30000); // 30 Sekunden (30000 Millisekunden)
-    </script>
-    <style>
-      body {
-        font-family: sans-serif;
-        text-align: center;
-        margin-top: 2em;
-        color: #444;
-      }
-    </style>
-  </head>
-  <body>
-    <p>Diese Seite wird alle 30 Sekunden automatisch neu geladen.</p>
-  </body>
-</html>
+<script>
+  setTimeout(function () {
+    // Reload die übergeordnete Seite (Budibase selbst)
+    window.parent.location.reload();
+  }, 30000);
+</script>
